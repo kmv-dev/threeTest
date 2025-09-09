@@ -115,7 +115,7 @@ export function useDore() {
       });
       scene.remove(doorGroup);
     }
-    doorGroup = buildDoor(doorWidth.value, doorHeight.value);
+    doorGroup = buildDoor();
     scene.add(doorGroup);
   };
   return { recreateDoor };

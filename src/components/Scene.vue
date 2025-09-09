@@ -17,7 +17,7 @@ import { useRoom } from '@/composables/useRoom';
 import { useLights } from '@/composables/useLights';
 
 const doorStore = useDoorStore();
-const { width, height, texture } = storeToRefs(doorStore);
+const { width, height } = storeToRefs(doorStore);
 
 type Disposable = { dispose?: () => void };
 const canvasRef = ref<HTMLCanvasElement | null>(null);
